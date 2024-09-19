@@ -1,0 +1,24 @@
+<h2>Componente Cocina</h2>
+
+<div>
+  <h3>Pendiente de Cocinar</h3>
+  <div>
+    <ul class="pedidos-ingresados">
+      <li *ngFor="let pedido of pedidoPendiente">
+        {{pedido.id}}
+        {{pedido.pedido}}
+        <button type="button" (click)="cocinar(pedido.id)">Cocinar</button>
+      </li>
+    </ul>
+  </div>
+
+  <h3>Pendiente de Cocción</h3>
+  <div>
+    <ul class="pedidos-coccion">
+      <li *ngFor="let pedido of pedidoCoccion">
+        {{pedido.id}}
+        {{pedido.nombre}}
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<h2>Component Point of Sell - POS</h2>
+<form>
+  <div class="container">
+    <div>
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" #nombre>
+    </div>
+    <div>
+      <label for="pedido">Pedido</label>
+      <input type="text" id="pedido" name="pedido" #pedido >
+    </div>
+  </div>
+  <button type="button" (click)="agregarVenta(nombre.value, pedido.value)">Ordenar</button>
+</form>
